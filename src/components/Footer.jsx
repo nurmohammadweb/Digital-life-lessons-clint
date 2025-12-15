@@ -10,9 +10,9 @@ const Footer = () => {
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div className="flex flex-col items-center md:items-start">
          {/* <img className='w-50' src={logoImg} alt="" /> */}
-          <p className="font-bold text-center text-3xl">PlateShare</p>
+          <p className="font-bold text-center text-3xl">Digital Life Lessons</p>
           <p className=" text-white text-2xl">
-            Sharing food, Spreading Kindness.<br />
+          Digital Life Lessons.<br />
             © {new Date().getFullYear()} All rights reserved.
           </p>
         </div>

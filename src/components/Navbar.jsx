@@ -8,6 +8,9 @@ import { AuthContext } from '../provider/AuthProvider';
 
 const Navbar = () => {
   const { user, logOut } = useContext(AuthContext);
+//   const auth = useContext(AuthContext) || {};
+// const { user, logOut } = auth;
+
 
   const handleLogOut = () => {
     logOut()
@@ -46,10 +49,10 @@ const Navbar = () => {
             {user && (
               <>
                 <li>
-                  <NavLink to="/addfood" className={linkClass}><FcAddDatabase /> Add Food</NavLink>
+                  <NavLink to="/addfood" className={linkClass}><FcAddDatabase /> Add Lesson</NavLink>
                 </li>
                 <li>
-                  <NavLink to="/managemyfoods" className={linkClass}><FcManager /> Manage My Foods</NavLink>
+                  <NavLink to="/managemyfoods" className={linkClass}><FcManager /> My Lessons</NavLink>
                 </li>
                 <li>
                   <NavLink to="/myfoodrequests" className={linkClass}><FcLike /> My Food Requests</NavLink>
@@ -58,7 +61,7 @@ const Navbar = () => {
             )}
           </ul>
         </div>
-        <Link to="/" className="btn btn-ghost text-xl ml-4"><img className='w-10' src={logo} alt="logo" /> PlateShare</Link>
+        <Link to="/" className="btn btn-ghost text-xl ml-4">Digital Life Lesson</Link>
       </div>
 
       <div className="navbar-center hidden lg:flex">
@@ -67,18 +70,18 @@ const Navbar = () => {
             <NavLink to="/" className={linkClass}><FcHome /> Home</NavLink>
           </li>
           <li>
-            <NavLink to="/availablefoods" className={linkClass}><FcList /> Available Foods</NavLink>
+            <NavLink to="/availablefoods" className={linkClass}><FcList /> Public Lessons</NavLink>
           </li>
           {user && (
             <>
               <li>
-                <NavLink to="/addfood" className={linkClass}><FcAddDatabase /> Add Food</NavLink>
+                <NavLink to="/addfood" className={linkClass}><FcAddDatabase /> Add Lessons</NavLink>
               </li>
               <li>
-                <NavLink to="/managemyfoods" className={linkClass}><FcManager /> Manage My Foods</NavLink>
+                <NavLink to="/managemyfoods" className={linkClass}><FcManager /> My Lessons</NavLink>
               </li>
               <li>
-                <NavLink to="/myfoodrequests" className={linkClass}><FcLike /> My Food Requests</NavLink>
+                <NavLink to="/myfoodrequests" className={linkClass}><FcLike /> Primeum</NavLink>
               </li>
             </>
           )}
